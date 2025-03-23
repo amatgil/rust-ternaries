@@ -19,7 +19,7 @@ si!(
     let x = 7;
     let y = -2;
     x + y < 123
-} ? 'T' : 'F') // 'T'
+} ? "Sum too slow" : is_riemann_hypothesis_true()) // "Sum too slow"
 ```
 
 Do keep in mind that, if an enum is `derive(Truthable)`, every variant must be tagged with either `truthy` or `falsey`.
