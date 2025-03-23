@@ -12,6 +12,16 @@ si!(1 + 1 == 2 ? 'T' : 'F') // 'T'
 
 Anything that implements `Truthy` can be used as a predicate. By default, only `bool`s, numeric types and enums with `derive(Truthyable)` implement it by default.
 
+Of course, all three positions accept a fully fledged Rust expression:
+```
+si!(
+{
+    let x = 7;
+    let y = -2;
+    x + y < 123
+} ? 'T' : 'F') // 'T'
+```
+
 Do keep in mind that, if an enum is `derive(Truthable)`, every variant must be tagged with either `truthy` or `falsey`.
 
 ```rs
