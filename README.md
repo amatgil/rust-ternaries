@@ -6,7 +6,7 @@ Add a ternary statement (like an inline if, but better* looking) to Rust.
 ## Usage
 The basic macro is called `si!`.
 ```rs
-    assert_eq!('T', si!(2 ? 'T' : 'F'));
+    assert_eq!('T', si!(1 + 1 == 2 ? 'T' : 'F'));
 ```
 (remember that both return values must be of the same type or diverge, as in normal if statements).
 
