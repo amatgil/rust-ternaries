@@ -13,7 +13,7 @@ si!(1 + 1 == 2 ? 'T' : 'F') // 'T'
 Anything that implements `Truthy` can be used as a predicate. By default, only `bool`s, numeric types and enums with `derive(Truthyable)` implement it by default.
 
 Of course, all three positions accept a fully fledged Rust expression:
-```
+```rs
 si!(
 {
     let x = 7;
