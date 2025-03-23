@@ -1,6 +1,8 @@
 # Ternary Statement Macro
 Add a ternary statement (like an inline if, but better* looking) to Rust.
 
+(This should not be used seriously, it was only written as an exploration of proc macros).
+
 ## Usage
 The basic macro is called `si!`.
 ```rs
