@@ -1,0 +1,5 @@
+/.direnv/
+./*/target/
+/target/
+/ternary_statement_macro/target/
+/ternary_statement_truthability/target/
