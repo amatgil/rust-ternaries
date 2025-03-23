@@ -14,7 +14,7 @@ Anything that implements `Truthy` can be used as a predicate. By default, only `
 
 Do keep in mind that, if an enum is `derive(Truthable)`, every variant must be tagged with either `truthy` or `falsey`.
 
-```
+```rs
 #[derive(Truthyable)]
 enum Thingy {
     #[truthy]
