@@ -14,8 +14,7 @@ Anything that implements `Truthy` can be used as a predicate. By default, only `
 
 Of course, all three positions accept a fully fledged Rust expression:
 ```rs
-si!(
-{
+si!({
     let x = 7;
     let y = -2;
     x + y < 123
