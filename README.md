@@ -8,7 +8,7 @@ The basic macro is called `si!`.
 ```rs
     assert_eq!('T', si!(1 + 1 == 2 ? 'T' : 'F'));
 ```
-(remember that both return values must be of the same type or diverge, as in normal if statements).
+(remember that both return values must be of the same type or diverge, as in standard if expressions).
 
 Anything that implements `Truthy` can be used as a predicate. By default, only `bool`s, numeric types and enums with `derive(Truthyable)` implement it.
 
