@@ -13,3 +13,9 @@ macro_rules! truthy_num {
 }
 
 truthy_num!(u8 u16 u32 u64 i8 i16 i32 i64);
+
+impl Truthy for bool {
+    fn to_bool(self) -> bool {
+        self
+    }
+}
